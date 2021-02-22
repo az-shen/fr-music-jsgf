@@ -1,0 +1,38 @@
+#JSGF V1.0 utf-8 fr; 
+grammar music_play_fr;
+
+public <music_play_fr> =
+	<request_fr> <music_fr>;
+
+<request_fr> = 
+	([(peux-tu [me]) | (pouvez-vous [me])] (mettre | jouer)) | 
+	((joue [moi]) | (mets [moi])) | 
+	(je veux écouter);
+
+<music_fr> = 
+	([du] <artist_fr>) | 
+	(<song_fr> [de <artist_fr>]) | 
+	([(de la musique) | du] <genre_fr>) | 
+	(<album_fr> [de <artist_fr>]);
+
+<artist_fr> = 
+	beatles | 
+	radiohead |
+	cake |
+	pink floyd; 
+
+<song_fr>   =
+    	comfortably numb |
+	paranoid android |
+	let it be | 
+	hey jude; 
+
+<genre_fr> =
+	jazz |
+	rap |
+	rock;
+
+<album_fr> =
+	ummagumma | 
+	abbey road |
+	ok computer;
