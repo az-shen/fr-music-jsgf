@@ -6,7 +6,7 @@ public <music_play_fr> =
 
 <request_fr> = 
 	([(peux-tu [me]) | (pouvez-vous [me])] (mettre | jouer)) | 
-	((joue [moi]) | (mets [moi])) | 
+	((joue [moi]) | (mets [moi]) | (jouez [moi]) | (mettez [moi])) | 
 	(je veux écouter);
 
 <music_fr> = 
